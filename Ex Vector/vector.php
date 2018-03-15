@@ -1,5 +1,5 @@
 <?php
-Class vector
+Class Vector
 {
     private $x;
     private $y;
@@ -36,14 +36,14 @@ Class vector
         echo 'Vector length: '.sqrt((pow($this->x,2)+pow($this->y,2))).'</br>';
     }
 
-    public function additionVector(vector $ve2)
+    public function additionVector(vector $vector)
     {
-        echo 'Vector addition: x:'.($this->x+$ve2->x).' y:'.($this->y+$ve2->y).'</br>';
+        echo 'Vector addition: x:'.($this->x+$vector->x).' y:'.($this->y+$vector->y).'</br>';
     }
 
-    public function dotproductVector(vector $ve2)
+    public function dotproductVector(vector $vector)
     {
-        echo 'Vector scalar product:'.(($this->x*$ve2->x)+($this->y*$ve2->y)).'</br>';
+        echo 'Vector scalar product:'.(($this->x*$vector->x)+($this->y*$vector->y)).'</br>';
     }
 
 }
